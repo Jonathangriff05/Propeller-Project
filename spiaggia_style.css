@@ -1,0 +1,449 @@
+<meta name="viewport" content="width=device-width" />
+		<style type="text/css">
+
+			@font-face {
+				font-family:"Night Club Seventy";
+				src: url(fonts/NightClubSeventy.ttf);
+				} 
+				
+			@font-face {
+				font-family:"icons";
+				src: url(fonts/icons.ttf);
+				} 
+			
+			img#logo{
+				margin-top:60px;
+				margin-bottom:20px;
+				}
+				
+			img.hp{
+				height:270px;
+				width:380px;
+				border-style:solid;
+				border-width:10px;
+				border-color:white;
+				margin-top:90px;
+				}
+				
+			img#nav_bg{			
+				z-index: -1;
+				}
+			
+			p#intro{				
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				line-height:150%; 
+				margin-bottom:25px;
+				}
+				
+			p#intro2{				
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				font-size: 14px;
+				line-height:150%;
+				}
+				
+			p.nav_link{
+				padding-top:2px;
+				margin-top:30px;	
+				margin-left:auto;	
+				margin-right:auto;	
+				border-style:solid;
+				border-width:3px;
+				border-color:black;		
+				width:190px;
+				height:25px; 				
+				text-decoration:none;
+				color: black;
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				font-size: 16px;
+				font-weight:bold;
+				text-align:center; 	
+				}
+				
+			#nav_link2{
+				padding-top:2px;
+				float:right;
+				text-align:center;	
+				margin-top:100px;
+				vertical-align:bottom;
+				border-style:solid;
+				border-width:3px;
+				border-color:black;	
+				width:190px;
+				height:25px;
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				font-size: 16px;
+				font-weight:bold;
+			}
+			
+			a {		
+				text-decoration:none;
+				color: black;
+				}
+			
+			body{padding:0px;margin:0px;box-sizing: border-box;}
+					.one_third{display:inline-block;width:33%;}
+					.one_qtr{display:inline-block;width:24%;}
+					.one_qtr2{display:inline-block;width:24%;}
+					.fb-col{display:inline-block;width:8%;}
+					@media (max-width:600px) {
+					  .one_third{width:100%;}
+					  .one_qtr{width:100%;}
+					  .one_qtr2{width:100%;}
+					  .fb-col{width:100%;}
+					}
+				
+			.nav{
+				background-image: url("images/nav_bg.jpg");
+				}
+				
+			.one_third{
+			vertical-align:top;
+			}
+			
+			#first_third{
+				text-align:center;		 
+				
+				}			
+			
+			.quicklinks{
+				background-color: white;				
+				}
+			
+			#qtr_ph{
+				background-image: url("images/phire.jpg");
+				background-color:#f399c1;
+				background-size: cover;
+				}
+			
+			#qtr_cinema{
+				background-image: url("images/cinema.jpg");
+				background-color:#f5875f;
+				background-size: cover;
+				}
+				
+			#qtr_events{
+				background-image: url("images/events.jpg");
+				background-color:#ffcc5b;
+				background-size: cover;
+				}
+				
+			#qtr_games{
+				background-image: url("images/games.jpg");
+				background-color:#99d5ce;
+				background-size: cover;
+				}	
+			
+			span.ql_text{
+				display: block;
+				margin-top:12%;
+				margin-bottom:10%;
+				text-align:center;
+				margin-left:auto;
+				margin-right:auto;
+				width:220px;
+				height:220px; 				
+				border-radius:220px; 
+				color:white;
+				font-family:"Night Club Seventy";
+				font-size: 24px;
+				font-weight:bold;
+				text-transform:uppercase;				
+			}
+			
+			span#ph_cont{
+				position:relative;
+				top: 30%;				
+				}
+			
+			span#cin_cont{
+				position:relative;
+				top: 30%;				
+				}
+			
+			span#events_cont{
+				position:relative;
+				top:75%;				
+				}
+			
+			span#games_cont{
+				position:relative;
+				top:15%;				
+				}
+				
+			.social{
+				background-image: url("images/social_bg.jpg");
+				
+				}
+			
+			.signup{
+				margin-left:25%;
+				margin-right:25%;
+				
+				}
+			
+			p#social_h1{
+				padding-top:6%;
+				color:#d3729e;
+				font-family:"Night Club Seventy";
+				font-size: 32px;
+				text-transform:uppercase;				
+			}
+			
+			p#social_p1{
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				font-size: 14px;			
+			
+			}
+			
+			form.input_box{
+				margin-left:auto;
+				margin-right:15px;
+				margin-bottom:10px;
+				display:inline-block;
+				color:white;
+				width:40%;
+				text-transform:uppercase;	
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				border-style:solid;
+				padding:4px;
+				border-width:3px;
+				border-color:white;					
+				background:none;
+			}
+			
+			.signup input[type="text"]{
+				display:inline-block;
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				background:none;
+				border:none;
+				color:white;
+				height:100%;
+				width:65%;
+				
+			}
+			
+			.signup select{
+				display:inline-block;
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				font-size:15px;
+				background:none;
+				border:none;
+				width:30%;
+				color:white;
+			}
+			
+			#button_send{
+				margin-top:2%;
+				margin-left:75%;
+				margin-bottom:10%;
+				display:inline-block;			
+				text-align:center;
+				width:70px;
+				height:70px; 				
+				border-radius:70px; 				
+				font-family:"Night Club Seventy";
+				font-size: 20px;
+				text-transform:uppercase;	
+				background-color:#f5875f;
+				background-size: cover;		
+			}
+			
+			span#send_cont{
+					color:white;
+					position:relative;
+					top:30%;
+			}
+			
+			.twitter{
+				background-color:#009a9b;
+				
+			}
+			
+			.t_display{
+				padding-top:2%;
+				margin-left:25%;
+				margin-right:25%;
+				text-align:center;
+			}
+			
+			#t_link{
+				color:white;				
+				font-family:"Futura, "Trebuchet MS", Arial, sans-serif";
+				font-size: 20px;			
+			}
+			
+			.t_feed{
+				display:block:
+				color:white;	
+				padding-bottom:3%;
+			}
+			
+			.twitter-tweet{
+				color:white;
+				text-align:left;
+				text-decoration:bold;
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				}	
+
+			.t_actions{				
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;	
+				
+				
+			}
+			
+			.t_action{
+				color:#fecc00;
+				text-align:center;
+				display:inline-block;
+				margin-right:10%;
+				margin-bottom:5%;
+				font-weight:bold;
+				font-size:16px;
+			}
+			
+			.ig_pic{
+				width:11%;
+				display:block-inline;
+				border-stlye:solid;
+				border-width:2px;
+				border-color:white;
+				margin:10px;
+			
+			}
+			
+			.icon{
+				font-family: "Night Club Seventy";
+				font-size:50px;
+				color:#ef82b3;				
+				}
+				
+			.icon.prev{
+				margin-left:3%;
+			}
+				
+			.slider{
+				overflow:hidden;
+				height:auto;			
+				
+				}
+				
+			.facebook{
+				text-align:left;
+				margin-left:20%;
+				margin-right:15%;
+				margin-top:5%;
+			
+			}
+				
+			span#fb-likes{
+				display:inline-block;
+				color:#018ec2;
+				font-size:20px;
+				text-transform:uppercase;
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				font-weight:bold;
+				margin-bottom:2%;
+				}
+				
+			.fb-col img{
+				margin-bottom:25px;
+				margin-left:25px;
+				margin-right:25px;
+				display:block;
+				position:relative;
+				top:0;
+				bottom:0;
+				left:0;
+				right:0;			
+			}		
+			
+			.fb-col{
+				margin-top:2%;
+				}
+			
+			.fb-col:nth-child(3n){
+				padding-bottom:40px;
+			}
+			
+			.fb-col:nth-child(3n-1){
+				padding-bottom:20px;
+			}
+			
+			.fb-col:nth-child(3n-2){
+				padding-bottom:0px;
+			}
+			
+			#foot{
+				margin-left:40%;
+				}
+			
+			.footer-header{
+				margin-top:2px;
+				border-bottom: 2px solid #000;
+			    height: 14px;
+			    margin-bottom: 50px;
+			    }
+				
+			.foot_cols{
+				text-align:center;
+								
+				}
+				
+			.one_qtr2 h1{
+				font-family:"Night Club Seventy";
+				font-size:18px;
+			}
+			
+			.one_qtr2 p{
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+			}
+			
+			form.foot_input_box{
+				text-align:left;
+				display:block;
+				color:black;
+				width:80%;
+				text-transform:uppercase;	
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				font-size:12px;
+				border-style:solid;
+				border-width:1px;				
+				background:none;
+			}
+			
+			span#foot_button_cont{
+				color:white;
+				margin-top:20%;
+				display:block;
+				position:relatative;
+			}
+			
+			#foot_button{
+				margin-top:2%;
+				display:inline-block;			
+				text-align:center;
+				width:50px;
+				height:50px; 				
+				border-radius:50px; 				
+				font-family:"Night Club Seventy";
+				font-size: 18px;
+				text-transform:uppercase;	
+				background-color:#000;
+				background-size: cover;		
+			}
+			
+				
+			#booking_link{
+				padding-top:2px;
+				text-align:center;	
+				margin-top:20px;				
+				border-style:solid;
+				border-width:3px;
+				border-color:black;	
+				width:auto;
+				height:25px;
+				font-family:Futura, "Trebuchet MS", Arial, sans-serif;
+				font-size: 16px;
+				font-weight:bold;
+			}
+		</style>
